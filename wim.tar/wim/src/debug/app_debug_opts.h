@@ -1,0 +1,583 @@
+/*
+ * Author:P V Sarath Chandra
+ */
+#ifndef APP_DEBUG_OPTS_H__
+#define APP_DEBUG_OPTS_H__
+
+#if (APP_DEBUG > 0)
+
+#if (MAIN_DBG_ON)
+#define MAIN_DEBUG	APP_DBG_ON
+#else
+#define MAIN_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (BOARD_DBG_ON)
+#define BOARD_DEBUG	APP_DBG_ON
+#else
+#define BOARD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (PROJECT_DBG_ON)
+#define PROJECT_DEBUG	APP_DBG_ON
+#else
+#define PROJECT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (SYSTEM_DBG_ON)
+#define SYSTEM_DEBUG	APP_DBG_ON
+#else
+#define SYSTEM_DEBUG	APP_DBG_OFF
+#endif
+
+#if (DEVICE_DBG_ON)
+#define DEVICE_DEBUG	APP_DBG_ON
+#else
+#define DEVICE_DEBUG	APP_DBG_OFF
+#endif
+
+#if (DEV_CFG_DEBUG_ON)
+#define DEV_CFG_DEBUG	APP_DBG_ON
+#else
+#define DEV_CFG_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LICENSE_DBG_ON)
+#define LICENSE_DEBUG	APP_DBG_ON
+#else
+#define LICENSE_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (LT_TIMER_DBG_ON)
+#define LT_TIMER_DEBUG	APP_DBG_ON
+#else
+#define LT_TIMER_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LT_TIMER_MQ_DBG_ON)
+#define LT_TIMER_MQ_DEBUG	APP_DBG_ON
+#else
+#define LT_TIMER_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LT_TIMER_EVENT_DBG_ON)
+#define LT_TIMER_EVENT_DEBUG	APP_DBG_ON
+#else
+#define LT_TIMER_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LT_TIMER_CMD_DBG_ON)
+#define LT_TIMER_CMD_DEBUG	APP_DBG_ON
+#else
+#define LT_TIMER_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (RT_TIMER_DBG_ON)
+#define RT_TIMER_DEBUG	APP_DBG_ON
+#else
+#define RT_TIMER_DEBUG	APP_DBG_OFF
+#endif
+
+#if (RT_TIMER_MQ_DBG_ON)
+#define RT_TIMER_MQ_DEBUG	APP_DBG_ON
+#else
+#define RT_TIMER_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (RT_TIMER_EVENT_DBG_ON)
+#define RT_TIMER_EVENT_DEBUG	APP_DBG_ON
+#else
+#define RT_TIMER_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (RT_TIMER_CMD_DBG_ON)
+#define RT_TIMER_CMD_DEBUG	APP_DBG_ON
+#else
+#define RT_TIMER_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (CFG_DBG_ON)
+#define CFG_DEBUG	APP_DBG_ON
+#else
+#define CFG_DEBUG	APP_DBG_OFF
+#endif
+
+#if (CFG_DEFAULT_DBG_ON)
+#define CFG_DEFAULT_DEBUG	APP_DBG_ON
+#else
+#define CFG_DEFAULT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (CFG_BACKUP_DBG_ON)
+#define CFG_BACKUP_DEBUG	APP_DBG_ON
+#else
+#define CFG_BACKUP_DEBUG	APP_DBG_OFF
+#endif
+
+#if (CFG_ACTIVE_DBG_ON)
+#define CFG_ACTIVE_DEBUG	APP_DBG_ON
+#else
+#define CFG_ACTIVE_DEBUG	APP_DBG_OFF
+#endif
+
+
+
+#if (LOG_DBG_ON)
+#define LOG_DEBUG	APP_DBG_ON
+#else
+#define LOG_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_MQ_DBG_ON)
+#define LOG_MQ_DEBUG	APP_DBG_ON
+#else
+#define LOG_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_EVENT_DBG_ON)
+#define LOG_EVENT_DEBUG	APP_DBG_ON
+#else
+#define LOG_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_CMD_DBG_ON)
+#define LOG_CMD_DEBUG	APP_DBG_ON
+#else
+#define LOG_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_SD_DBG_ON)
+#define LOG_SD_DEBUG	APP_DBG_ON
+#else
+#define LOG_SD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_SD_EVENT_DBG_ON)
+#define LOG_SD_EVENT_DEBUG	APP_DBG_ON
+#else
+#define LOG_SD_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_SD_CMD_DBG_ON)
+#define LOG_SD_CMD_DEBUG	APP_DBG_ON
+#else
+#define LOG_SD_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (LOG_SERIAL_DBG_ON)
+#define LOG_SERIAL_DEBUG	APP_DBG_ON
+#else
+#define LOG_SERIAL_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_SERIAL_EVENT_DBG_ON)
+#define LOG_SERIAL_EVENT_DEBUG	APP_DBG_ON
+#else
+#define LOG_SERIAL_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (LOG_SERIAL_CMD_DBG_ON)
+#define LOG_SERIAL_CMD_DEBUG	APP_DBG_ON
+#else
+#define LOG_SERIAL_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (IO_DBG_ON)
+#define IO_DEBUG	APP_DBG_ON
+#else
+#define IO_DEBUG	APP_DBG_OFF
+#endif
+
+#if (IO_MQ_DBG_ON)
+#define IO_MQ_DEBUG	APP_DBG_ON
+#else
+#define IO_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (IO_EVENT_DBG_ON)
+#define IO_EVENT_DEBUG	APP_DBG_ON
+#else
+#define IO_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (IO_CMD_DBG_ON)
+#define IO_CMD_DEBUG	APP_DBG_ON
+#else
+#define IO_CDM_DEBUG	APP_DBG_OFF
+#endif
+
+
+
+#if (UIO_DBG_ON)
+#define UIO_DEBUG	APP_DBG_ON
+#else
+#define UIO_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_MQ_DBG_ON)
+#define UIO_MQ_DEBUG	APP_DBG_ON
+#else
+#define UIO_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_EVENT_DBG_ON)
+#define UIO_EVENT_DEBUG	APP_DBG_ON
+#else
+#define UIO_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (UIO_CMD_DBG_ON)
+#define UIO_CMD_DEBUG	APP_DBG_ON
+#else
+#define UIO_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_SERIAL_DBG_ON)
+#define UIO_SERIAL_DEBUG	APP_DBG_ON
+#else
+#define UIO_SERIAL_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_MQ_SERIAL_EVENT_DBG_ON)
+#define UIO_MQ_SERIAL_EVENT_DEBUG	APP_DBG_ON
+#else
+#define UIO_MQ_SERIAL_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (UIO_SERIAL_EVENT_DBG_ON)
+#define UIO_SERIAL_EVENT_DEBUG	APP_DBG_ON
+#else
+#define UIO_SERIAL_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_SERIAL_CMD_DBG_ON)
+#define UIO_SERIAL_CMD_DEBUG	APP_DBG_ON
+#else
+#define UIO_SERIAL_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_NET_DBG_ON)
+#define UIO_NET_DEBUG	APP_DBG_ON
+#else
+#define UIO_NET_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_MQ_NET_EVENT_DBG_ON)
+#define UIO_MQ_NET_EVENT_DEBUG	APP_DBG_ON
+#else
+#define UIO_MQ_NET_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_NET_EVENT_DBG_ON)
+#define UIO_NET_EVENT_DEBUG	APP_DBG_ON
+#else
+#define UIO_NET_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (UIO_NET_CMD_DBG_ON)
+#define UIO_NET_CMD_DEBUG	APP_DBG_ON
+#else
+#define UIO_NET_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (GUIO_DBG_ON)
+#define GUIO_DEBUG	APP_DBG_ON
+#else
+#define GUIO_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_MQ_DBG_ON)
+#define GUIO_MQ_DEBUG	APP_DBG_ON
+#else
+#define GUIO_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_EVENT_DBG_ON)
+#define GUIO_EVENT_DEBUG	APP_DBG_ON
+#else
+#define GUIO_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_CMD_DBG_ON)
+#define GUIO_CMD_DEBUG	APP_DBG_ON
+#else
+#define GUIO_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_CHAR_LCD_DBG_ON)
+#define GUIO_CHAR_LCD_DEBUG	APP_DBG_ON
+#else
+#define GUIO_CHAR_LCD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_CHAR_LCD_EVENT_DBG_ON)
+#define GUIO_CHAR_LCD_EVENT_DEBUG	APP_DBG_ON
+#else
+#define GUIO_CHAR_LCD_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_CHAR_LCD_CMD_DBG_ON)
+#define GUIO_CHAR_LCD_CMD_DEBUG	APP_DBG_ON
+#else
+#define GUIO_CHAR_LCD_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (GUIO_MKEYPAD_DBG_ON)
+#define GUIO_MKEYPAD_DEBUG	APP_DBG_ON
+#else
+#define GUIO_MKEYPAD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (INPUT_DBG_ON)
+#define INPUT_DEBUG	APP_DBG_ON
+#else
+#define INPUT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (INPUT_MQ_DBG_ON)
+#define INPUT_MQ_DEBUG	APP_DBG_ON
+#else
+#define INPUT_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (INPUT_EVENT_DBG_ON)
+#define INPUT_EVENT_DEBUG	APP_DBG_ON
+#else
+#define INPUT_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (INPUT_CMD_DBG_ON)
+#define INPUT_CMD_DEBUG	APP_DBG_ON
+#else
+#define INPUT_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (INPUT_MKEYPAD_DBG_ON)
+#define INPUT_MKEYPAD_DEBUG	APP_DBG_ON
+#else
+#define INPUT_MKEYPAD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (MKEYPAD_DBG_ON)
+#define MKEYPAD_DEBUG	APP_DBG_ON
+#else
+#define MKEYPAD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (MKEYPAD_EVENT_DBG_ON)
+#define MKEYPAD_EVENT_DEBUG	APP_DBG_ON
+#else
+#define MKEYPAD_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (MKEYPAD_CMD_DBG_ON)
+#define MKEYPAD_CMD_DEBUG	APP_DBG_ON
+#else
+#define MKEYPAD_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+
+#if (WEIGH_DBG_ON)
+#define WEIGH_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_MQ_DBG_ON)
+#define WEIGH_MQ_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_EVENT_DBG_ON)
+#define WEIGH_EVENT_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_CMD_DBG_ON)
+#define WEIGH_CMD_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (WEIGH_ADC_DBG_ON)
+#define WEIGH_ADC_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_ADC_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_ADC_EVENT_DBG_ON)
+#define WEIGH_ADC_EVENT_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_ADC_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_ADC_CMD_DBG_ON)
+#define WEIGH_ADC_CMD_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_ADC_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_ADC_M4_DBG_ON)
+#define WEIGH_ADC_M4_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_ADC_M4_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_ADC_M4_EVENT_DBG_ON)
+#define WEIGH_ADC_M4_EVENT_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_ADC_M4_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_ADC_M4_CMD_DBG_ON)
+#define WEIGH_ADC_M4_CMD_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_ADC_M4_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_AXLE_DBG_ON)
+#define WEIGH_AXLE_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_AXLE_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (WEIGH_AXLE_EVENT_DBG_ON)
+#define WEIGH_AXLE_EVENT_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_AXLE_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WEIGH_AXLE_CMD_DBG_ON)
+#define WEIGH_AXLE_CMD_DEBUG	APP_DBG_ON
+#else
+#define WEIGH_AXLE_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (WIM_DBG_ON)
+#define WIM_DEBUG	APP_DBG_ON
+#else
+#define WIM_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WIM_MQ_DBG_ON)
+#define WIM_MQ_DEBUG	APP_DBG_ON
+#else
+#define WIM_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WIM_EVENT_DBG_ON)
+#define WIM_EVENT_DEBUG	APP_DBG_ON
+#else
+#define WIM_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WIM_CMD_DBG_ON)
+#define WIM_CMD_DEBUG	APP_DBG_ON
+#else
+#define WIM_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WIM_FSM_DBG_ON)
+#define WIM_FSM_DEBUG	APP_DBG_ON
+#else
+#define WIM_FSM_DEBUG	APP_DBG_OFF
+#endif
+
+#if (WIM_FSM_OP_DBG_ON)
+#define WIM_FSM_OP_DEBUG	APP_DBG_ON
+#else
+#define WIM_FSM_OP_DEBUG	APP_DBG_OFF
+#endif
+
+
+#if (ALE_DBG_ON)
+#define ALE_DEBUG	APP_DBG_ON
+#else
+#define ALE_DEBUG	APP_DBG_OFF
+#endif
+
+#if (ALE_MQ_DBG_ON)
+#define ALE_MQ_DEBUG	APP_DBG_ON
+#else
+#define ALE_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (ALE_EVENT_DBG_ON)
+#define ALE_EVENT_DEBUG	APP_DBG_ON
+#else
+#define ALE_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (ALE_CMD_DBG_ON)
+#define ALE_CMD_DEBUG	APP_DBG_ON
+#else
+#define ALE_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (ALE_FSM_DBG_ON)
+#define ALE_FSM_DEBUG	APP_DBG_ON
+#else
+#define ALE_FSM_DEBUG	APP_DBG_OFF
+#endif
+
+#if (ALE_FSM_OP_DBG_ON)
+#define ALE_FSM_OP_DEBUG	APP_DBG_ON
+#else
+#define ALE_FSM_OP_DEBUG	APP_DBG_OFF
+#endif
+
+
+
+#if (SERVER_DBG_ON)
+#define SERVER_DEBUG	APP_DBG_ON
+#else
+#define SERVER_DEBUG	APP_DBG_OFF
+#endif
+
+#if (SERVER_MQ_DBG_ON)
+#define SERVER_MQ_DEBUG	APP_DBG_ON
+#else
+#define SERVER_MQ_DEBUG	APP_DBG_OFF
+#endif
+
+#if (SERVER_EVENT_DBG_ON)
+#define SERVER_EVENT_DEBUG	APP_DBG_ON
+#else
+#define SERVER_EVENT_DEBUG	APP_DBG_OFF
+#endif
+
+#if (SERVER_CMD_DBG_ON)
+#define SERVER_CMD_DEBUG	APP_DBG_ON
+#else
+#define SERVER_CMD_DEBUG	APP_DBG_OFF
+#endif
+
+#if (SERVER_CMD_DATA_DBG_ON)
+#define SERVER_CMD_DATA_DEBUG	APP_DBG_ON
+#else
+#define SERVER_CMD_DATA_DEBUG	APP_DBG_OFF
+#endif
+
+#define APP_DBG_MIN_LEVEL       APP_DBG_LEVEL_ALL
+#endif
+
+#define APP_DBG_TYPES_ON         (APP_DBG_ON|APP_DBG_TRACE|APP_DBG_STATE|APP_DBG_FRESH|APP_DBG_HALT)
+
+#endif /* APP_DEBUG_OPTS_H__ */
