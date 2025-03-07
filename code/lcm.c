@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main(){
 
 	int num1, num2, cmp_num, tem_ans = 0;
