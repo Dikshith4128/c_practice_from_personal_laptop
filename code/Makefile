@@ -22,3 +22,6 @@ $(OUT_DIR)/%.out: %.c
 clean:
 	rm -f $(OUT_DIR)/*.out
 
+# Rebuild rule (clean and make all)
+rebuild: clean all
+
